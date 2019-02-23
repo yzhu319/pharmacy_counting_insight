@@ -1,6 +1,0 @@
-[Fri Feb 22 18:02:52 EST 2019] 0 of 2 tests passed
-[Fri Feb 22 18:03:46 EST 2019] 0 of 2 tests passed
-[Fri Feb 22 18:04:39 EST 2019] 0 of 2 tests passed
-[Fri Feb 22 18:15:12 EST 2019] 2 of 2 tests passed
-[Fri Feb 22 18:16:25 EST 2019] 2 of 2 tests passed
-[Fri Feb 22 18:21:47 EST 2019] 2 of 2 tests passed
