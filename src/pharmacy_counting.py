@@ -5,17 +5,12 @@
 import csv
 import time
 
-#test files
 input_path = "../input/itcont.txt"
 #input_path = "../input/de_cc_data.txt" # 1G, 24M input
-
 #input_path = "../input/de_cc_data_2M_sample.txt" # 0.1G, 2M input
-#input_path = "../insight_testsuite/tests/test_1/input/itcont.txt"
-#output_path = "../insight_testsuite/tests/test_1/output/top_cost_drug.txt"
-
 output_path = "../output/top_cost_drug.txt"
 
-TIMING = 1
+TIMING = 0
 start_time = time.time()
 
 with open(input_path, 'rb') as input_file:
@@ -25,7 +20,6 @@ if(TIMING): print(time.strftime("%H:%M:%S", time.gmtime(time.time() - start_time
 
 features = split_lines[0] # first row, feature names
 split_lines = list(zip(*split_lines[1:])) # skip first line, a collection of column values
-
 first_name = list(split_lines[features.index('prescriber_first_name')])
 last_name = list(split_lines[features.index('prescriber_last_name')])
 drug_name = list(split_lines[features.index('drug_name')])
