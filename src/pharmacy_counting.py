@@ -62,7 +62,7 @@ for (thisDrug, total_cost) in sorted_total_cost:
     #unique full_name list for this drug
     unique_full_name = list(set(name_dict[thisDrug]))
     #print(unique_full_name)
-    output_file.write("\n{},{},{}".format(thisDrug, len(unique_full_name), total_cost))
+    output_file.write("\n{},{},{}".format(thisDrug, len(unique_full_name), int(total_cost)))
 
 if(TIMING): print(time.strftime("%H:%M:%S", time.gmtime(time.time() - start_time)))
 
