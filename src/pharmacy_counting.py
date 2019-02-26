@@ -1,14 +1,16 @@
 ## Pharmacy counting insight challange
 ## @Author: Yuanzheng Zhu
 ## ...Cannot use any external packages like pandas, np, etc...
-
+import sys
 import csv
 import time
 
-input_path = "../input/itcont.txt"
+input_path = sys.argv[1]
+output_path = sys.argv[2]
+#input_path = "./input/itcont.txt"
 #input_path = "../input/de_cc_data.txt" # 1G, 24M input
 #input_path = "../input/de_cc_data_2M_sample.txt" # 0.1G, 2M input
-output_path = "../output/top_cost_drug.txt"
+#output_path = "./output/top_cost_drug.txt"
 
 TIMING = 0
 start_time = time.time()
